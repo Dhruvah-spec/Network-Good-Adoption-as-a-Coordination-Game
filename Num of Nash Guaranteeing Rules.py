@@ -34,7 +34,7 @@ def get_next_state_universal(G, current_state, rules):
                 
     return next_state
 
-def find_always_converging_rules(G, filename="6 Node_small world_5_Nash Rules.xlsx"):
+def find_always_converging_rules(G, filename=" "):
     nodes = sorted(list(G.nodes()))
     n = len(nodes)
     
@@ -85,7 +85,7 @@ def find_always_converging_rules(G, filename="6 Node_small world_5_Nash Rules.xl
 # --- Define Topology ---
 # Change this to any graph: nx.cycle_graph(6), nx.complete_graph(6), etc.
 G = nx.Graph() 
-G.add_edges_from([(0, 3), (0, 5), (1, 2), (1, 4), (1, 5), (2, 3), (2, 5), (3, 4), (4, 5)])
+G.add_edges_from([])
 
 count = find_always_converging_rules(G)
 print(f"Search complete. Found {count} universal rule sets. Results saved to Excel.")

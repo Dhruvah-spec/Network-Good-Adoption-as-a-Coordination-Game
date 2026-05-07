@@ -17,6 +17,11 @@ The rows represent the player, and the columns represent all the players to whic
 ## Rule Archetypes
 | Type            | Decision Rule                                                                 | Belief                                                                                          |
 |-----------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Fixed           | Plays the same move in every round.                                          | Friends will copy them, so they do not need to copy others.                                      |
-| Adaptive        | Copies the move played by the majority of friends in the previous round (plays A if no clear majority). | Friends only copy themselves, so they must copy friends to achieve coordination.                |
-| Forward Looking | Copies the move played by the majority of friends’ friends in the previous round (plays A if no clear majority). | Friends make decisions by copying their own friends, so they must anticipate this to coordinate. |
+| Fixed (I)          | Plays the same move in every round.                                          | Friends will copy them, so they do not need to copy others.                                      |
+| Adaptive (II)       | Copies the move played by the majority of friends in the previous round (plays A if no clear majority). | Friends only copy themselves, so they must copy friends to achieve coordination.                |
+| Forward Looking (III) | Copies the move played by the majority of friends’ friends in the previous round (plays A if no clear majority). | Friends make decisions by copying their own friends, so they must anticipate this to coordinate. |
+
+### Variants for Rule 3:
+Variant 1 - For the first variation, under rule 3, the players themselves are part of their set of friends’ friends. For example, if player 1 is friends with player 2, and if player 2 is friends with player 4, when player 1 plays rule 3, ie when he copies his friends’ friends, he will be copying the majority move out of player 1 (his own move) and player 4. This is a natural interpretation of the rule as player 1 is also player 2’s friend (because we are considering undirected networks) and so he would include himself under the set of friends’ friends. This is the self-inclusion logic for rule 3. 
+
+Variant 2 - Under the second variation, the players playing the rule will not include their own vote in deciding what their next move should be, player 1 would be excluded from the set. Self-inclusion logic for rule 3 is not followed under this variation.

@@ -1,3 +1,6 @@
+## Calculates number of rule sets that guarantee convergence to a nash equilibrium within 3 rounds
+## Does not use self-inclusion logic for rule 3
+
 import itertools
 import pandas as pd
 import networkx as nx

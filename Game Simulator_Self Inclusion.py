@@ -1,3 +1,6 @@
+## Simulates all possible outcomes of the game for 3 rounds.
+## Self-Inclusion Logic for Rule 3
+
 import itertools
 import pandas as pd
 import networkx as nx

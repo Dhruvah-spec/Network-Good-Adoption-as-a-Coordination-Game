@@ -1,5 +1,6 @@
 ## Simulates all possible outcomes of the game for 3 rounds.
 ## Self-Inclusion Logic for Rule 3
+## Gives the copy sets for each player, ie the player that each rule prompts a player to copy for a given round
 
 import itertools
 import pandas as pd

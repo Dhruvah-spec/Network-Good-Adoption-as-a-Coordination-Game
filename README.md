@@ -1,4 +1,4 @@
-# Coordination-Games-on-Networks
+# Network-Good-Adoption-as-a-Coordination-Game
 
 Coordination games involve decision-making scenarios in which two or more players are required to choose between options with payoffs dependent on the others’ actions and where the highest level of utility is achieved by converging on a common set of strategies. Games like ‘Battle of Sexes’ and 'Stag Hunt' serve as a classic archetypes for representing these kinds of situations. 
 

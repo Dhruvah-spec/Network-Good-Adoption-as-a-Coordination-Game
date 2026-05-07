@@ -26,6 +26,8 @@ Variant 1 - For the first variation, under rule 3, the players themselves are pa
 
 Variant 2 - Under the second variation, the players playing the rule will not include their own vote in deciding what their next move should be, player 1 would be excluded from the set. Self-inclusion logic for rule 3 is not followed under this variation.
 
+This study simulates all possible combinations of the heuristic rules discussed above within different network topologies for every state the game can take (players 1, 3, 4 playing A and players 5, 6 playing D, for example, is one possible state). 
+
 ## Network Topologies
 | Topology            | Description                                                                 | Key Properties                                                                                  | ASCII Diagram |
 |---------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------|
@@ -33,3 +35,7 @@ Variant 2 - Under the second variation, the players playing the rule will not in
 | Small-World Graph   | Mostly local connections with a few long-range random links.                | High clustering + short average path lengths.                                                    | ``` A--B--C  |  |  |  D--E--F  \     /   G-----H ``` |
 | Star Graph          | One central node connected to all others; no peripheral connections.        | Highly centralized; hub is critical point of failure.                                            | ```    B     |    |  C--A--D     |     E ``` |
 | Spoke and Hub Graph | Multiple hubs or layered hub-spoke structure.                               | Semi-centralized; more robust than a single star.                                                | ```   B     F    |    |    C--A----E     |     D     G ``` |
+
+### 3. Star Graph (6 Nodes)
+    B
+    |

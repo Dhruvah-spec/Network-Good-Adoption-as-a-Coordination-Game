@@ -1,3 +1,6 @@
+## Finds the number of nash equilibria for a given network topology
+## Calculates payoffs associated with all possible combinations of 'A' and 'D'
+
 import itertools
 import networkx as nx
 

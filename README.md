@@ -14,8 +14,10 @@ This study treats the problem of individuals making adoption decisions as a 6 pl
 
 The rows represent the player, and the columns represent all the players to which this player is connected, ie the player’s friends. If the player chooses A, a unit of 1 is received for every friend that also chooses A, but it loses a unit of 1 for every one of its friends that don’t choose A. If the player chooses D, it loses a unit of 1 for every friend that chooses to play and gets a payoff of 0 for every friend that also chooses D. In this scenario, common knowledge of rationality and complete information would result in everyone choosing to play A as it is collectively known that this yields the highest benefit for all. To explore more interesting dynamics, this study relaxes the assumption of common knowledge of rationality and instead supposes that players have different beliefs about how their friends take decisions and use heuristic rules based on those beliefs to make their own decisions. It is also assumed that they are aware of the network structure.
 
-## Rules
-Strategy	Behavior Logic	Underlying Belief	Tie-Break
-Fixed	Maintains the same move every round regardless of network activity.	Believes friends will eventually conform to their lead.	N/A (Static)
-Adaptive	Copies the move played by the majority of direct friends in the previous round.	Believes friends are self-interested; must react to them to coordinate.	Plays A
-Forward Looking	Copies the move played by the majority of their friends' friends in the previous round.	Believes friends are also reactive; must look one step ahead to synchronize.	Plays A
+## Rule Archetypes
+| Type             | Description |
+|------------------|-------------|
+| Fixed            | These players play the same move for every round of the game. They believe that their friends will be the ones to copy them, so they refrain from copying anyone else’s moves. |
+| Adaptive         | These players copy whatever move was played by most of their friends in the previous round (plays A if no clear majority). They believe that their friends only copy themselves and so they need to copy their friends to achieve coordination. |
+| Forward Looking  | These players copy whatever move was played by most of their friends’ friends in the previous round (plays A if no clear majority). They believe that their friends take decisions by copying their friends, so these players need to copy those players to achieve coordination. |
+

@@ -1,6 +1,7 @@
-## Simulates all possible outcomes of the game for 3 rounds.
+## Simulates all possible outcomes of the game (for every possible starting state and rule configuration) for 3 rounds.
 ## Self-Inclusion Logic for Rule 3
 ## Gives the copy sets for each player, ie the player that each rule prompts a player to copy for a given round
+## Classfies each outcome as 'deadlock', 'oscillating', or 'concensus' based on how states change from round to round
 
 import itertools
 import pandas as pd

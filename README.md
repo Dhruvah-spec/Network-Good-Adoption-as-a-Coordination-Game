@@ -1,4 +1,5 @@
 # Network-Good-Adoption-as-a-Coordination-Game 🎮
+Many goods and services, from a user’s perspective, derive at least some of their value from the number of other users of the same good/service. This is explicitly the case for platforms like social media apps and email service providers which rely on a connected user base for the flow of information and ideas but is also true for technologies like operating systems, payment systems and digital marketplaces. These types of goods have been called 'network goods'.  
 
 Coordination games involve decision-making scenarios in which two or more players are required to choose between options with payoffs dependent on the others’ actions and where the highest level of utility is achieved by converging on a common set of strategies. Games like ‘Battle of Sexes’ and 'Stag Hunt' serve as a classic archetypes for representing these kinds of situations. 
 
